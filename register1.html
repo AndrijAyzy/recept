@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Реєстрація</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desctop.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <div class="header-container-wrap">
+          <nav class="navigation">
+            <div class="navigation-container">
+              <a class="logo link" href="./index.html"
+                ><span>Рецепт.</span>UA</a
+              >
+              <ul class="navigation-list list">
+                <li class="navigation-list-item">
+                  <a class="navigation-item link current" href="./index.html"
+                    >Про нас</a
+                  >
+                </li>
+                <li class="navigation-list-item">
+                  <a class="navigation-item link" href="./portfolio.html"
+                    >Рецепт</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <address class="address">
+            <ul class="address-list list">
+              <li class="address-list-item">
+                <a class="address-item link" href="tel:+228228228"
+                  >+228 (228) 228-228</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <button class="mob-menu-btn" data-menu-open type="button">
+          <svg class="mob-menu-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div data-menu class="mob-menu is-hidden">
+        <button type="button" data-menu-close class="mob-menu-close-btn">
+          <svg width="8" height="8">
+            <use href="./images/icons.svg#icon-modal-close"></use>
+          </svg>
+        </button>
+
+        <ul class="mob-menu-navigation list">
+          <li class="mob-menu-navigation-item">
+            <a class="mob-menu-link link current" href="./index.html">Про нас</a>
+          </li>
+          <li class="mob-menu-navigation-item">
+            <a class="mob-menu-link link" href="./portfolio.html">Рецепт</a>
+          </li>
+        </ul>
+        <div class="mob-menu-contacts">
+          <a class="mob-menu-phone link" href="tel:+110001111111"
+            >+228 (228) 228-228</a
+          >
+          <ul class="mob-menu-soc-list list">
+            <li class="team-soc-item">
+              <a href="" class="team-soc-link" aria-label="Instagram">
+                <svg width="16" height="16" class="team-soc-icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team-soc-item">
+              <a href="" class="team-soc-link" aria-label="Twitter">
+                <svg width="16" height="16" class="team-soc-icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team-soc-item">
+              <a href="" class="team-soc-link" aria-label="Facebook">
+                <svg width="16" height="16" class="team-soc-icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team-soc-item">
+              <a href="" class="team-soc-link" aria-label="LinkedIn">
+                <svg width="16" height="16" class="team-soc-icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+        <section class="register">
+            <div class="container">
+                <h2 class="title-register">Підтвердження реєстрації</h2>
+                <ul class="preferences-list list">
+                  <li class="preferences-item">
+                    <h3 class="title-register-text">Вас цікавить рецепт запіканки?</h3>
+                    <div class="user-policy-wrap">
+                        <input
+                          type="checkbox"
+                          class="modal-user-policy"
+                          name="button"
+                          id="user_policy"
+                        />
+                        <label for="user_policy" class="modal-user-policy-label">
+                          <span class="user-policy-checkbox">
+                            <svg class="user-policy-icon" width="10" height="8">
+                              <use href="./images/icons.svg#icon-policy"></use>
+                            </svg>
+                          </span>
+                          Так
+                          </label
+                        >
+                      </div>
+                      <div class="user-policy-wrap">
+                        <input
+                          type="checkbox"
+                          class="modal-user-policy"
+                          name="button"
+                          id="user_policy"
+                        />
+                        <label for="user_policy" class="modal-user-policy-label">
+                          <span class="user-policy-checkbox">
+                            <svg class="user-policy-icon" width="10" height="8">
+                              <use href="./images/icons.svg#icon-policy"></use>
+                            </svg>
+                          </span>
+                          Ні
+                          </label
+                        >
+                      </div>
+                  </li>
+                </ul>
+              </div>
+              <input class="hero-btn" type="button" value="Далі" onClick='location.href="./register.html"'>
+          </section>
+    </main>
+    <footer class="section footer">
+        <div class="container footer-container">
+          <div class="footer-descr-media-wrapper">
+            <div class="footer-descr">
+              <a class="footer-logo link" href="./index.html"
+                ><span>Рецепти.</span>UA</a
+              >
+              <p class="footer-text">
+                Найсмачніші рецепти запіканок про які ви навіть не чули і не пожалієте!
+              </p>
+            </div>
+            <div class="footer-media">
+              <h3 class="footer-media-title">Social media</h3>
+              <ul class="footer-media-list list">
+                <li class="footer-media-item">
+                  <a href="" class="footer-media-link" aria-label="Instagram">
+                    <svg class="footer-media-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-media-item">
+                  <a href="" class="footer-media-link" aria-label="Twitter">
+                    <svg class="footer-media-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-media-item">
+                  <a href="" class="footer-media-link" aria-label="Facebook">
+                    <svg class="footer-media-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-media-item">
+                  <a href="" class="footer-media-link" aria-label="LinkedIn">
+                    <svg class="footer-media-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>
